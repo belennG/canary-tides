@@ -1,4 +1,4 @@
-# canary-tides
+# Canary Islands Tides & Currents
 
 ## What it is
 
@@ -14,19 +14,21 @@ wave and swell summary and sea-surface temperature;
 - shareable URLs — the selected spots and scrub time live in the query string.
 
 ## Tech
-Concern	Choice
-Framework	Vue 3, Composition API, <script setup>
-Language	TypeScript
-Build	Vite
-Map	Leaflet + OpenStreetMap tiles (no wrapper library — Leaflet is driven imperatively from Vue watchers)
-State	Pinia for cross-view state, composables for feature logic
-Routing / shareable state	Vue Router, query-string sync
-Charts	Hand-rolled SVG (tide curve), optionally uPlot/Chart.js later
-Data	Open-Meteo Marine API — forecast + ERA5-Ocean archive, no API key
-Tests	Vitest + Vue Test Utils
-Hosting	Netlify / Vercel
-Data source
-Open-Meteo Marine API, hourly variables: sea_level_height_msl, ocean_current_velocity, ocean_current_direction, wave_height, swell_wave_height, sea_surface_temperature. Free for non-commercial use, no key required. Observed tide-gauge data from Puertos del Estado (REDMAR network, stations at Las Palmas, Santa Cruz de Tenerife, Arrecife, La Gomera, El Hierro and others) is a possible later enhancement.
+
+| Concern | Choice |
+| ------- | ------ |
+| Framework | Vue 3, Composition API, &lt;script setup&gt; |
+| Language | TypeScript |
+| Build | Vite |
+| Map | Leaflet + OpenStreetMap tiles (no wrapper library — Leaflet is driven imperatively from Vue watchers) |
+| State | Pinia for cross-view state, composables for feature logic |
+| Routing / shareable state | Vue Router, query-string sync |
+| Charts | Hand-rolled SVG (tide curve), optionally uPlot/Chart.js later |
+| Data | Open-Meteo Marine API — forecast + ERA5-Ocean archive, no API key |
+| Tests | Vitest + Vue Test Utils |
+| Hosting | Netlify / Vercel |
+| Data source | Open-Meteo Marine API, hourly variables: sea_level_height_msl, ocean_current_velocity, ocean_current_direction, wave_height, swell_wave_height, sea_surface_temperature. Free for non-commercial use, no key required. Observed tide-gauge data from Puertos del Estado (REDMAR network, stations at Las Palmas, Santa Cruz de Tenerife, Arrecife, La Gomera, El Hierro and others) is a possible later enhancement. |
 
 ## Status
+
 Portfolio project, built in public. See the milestones and issues for the plan.
